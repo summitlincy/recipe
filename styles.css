@@ -61,11 +61,14 @@ body{
 }
 h1{
     font-family:"bebas neue";
-    font-size: 40px;;
+    font-size: 40px;
+    text-align: center;
 }
 h2{
     font-family:"bebas neue";
     font-size: 30px;
+    text-align:center;
+    margin: 15px 10px;
 }
 h3{
     font-family:"bebas neue";
@@ -92,4 +95,52 @@ dt{
     font-family:"montserrat";
     font-size:16px;
     font-weight:bold;
+}
+#menu{
+    display:inline;
+    position:relative;
+    align-items:center;
+    margin:auto;
+}
+#menu svg{
+    position:relative;
+    margin-bottom:30px;
+    margin-top: 20px;
+}
+#menu li{
+    list-style-type: none;  
+    position:relative;
+    float:left;
+    text-align: center;
+    line-height: 1;
+}
+#tacos img{
+    width:100%;
+}
+#tacos p{
+    margin: 15px 10px;
+}
+#details table {
+    display:table;
+    table-layout: auto;
+    width: 100%;
+    white-space: nowrap;
+}
+#details table tr{
+    display:table-row;
+}
+#details table td{
+    display:table-cell;
+}
+#ingredients ul{
+    margin: 15px 30px;
+}
+#ingredients li{
+    padding-top: 5px;
+}
+#directions ol{
+    margin: 15px 30px;
+}
+#directions li{
+    padding-top: 5px;
 }
