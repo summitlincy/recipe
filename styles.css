@@ -100,6 +100,7 @@ dt{
     margin:auto;
 }
 #menu svg{
+    display:inline-block;
     position:relative;
     margin-bottom:30px;
     margin-top: 20px;
@@ -147,8 +148,16 @@ dt{
 #sides img{
     width: 20%;
 }
+#sides p{
+    float:right;
+    text-align: left;
+}
+#sides h3{
+    float:right;
+}
 nav{
-    position:absolute;
+    position:fixed;
+    display:inline-block
     top:0px;
     width:375px;
 }
@@ -156,6 +165,7 @@ nav h2{
     text-indent: 100%;
     white-space: nowrap;
     overflow:hidden;
+    font-family:"bebas-neue";
 }
 nav img{
     width: 50px;
@@ -164,7 +174,7 @@ nav img{
 }
 nav li{
     list-style-type: none;
-
+    color:var(--orange);
 }
 #social{
     margin:auto;
@@ -195,6 +205,23 @@ nav li{
 @media screen and (min-width:768px){
     body{
         width:768px;
+    }
+    #nav{
+        display:inline-block;
+        position: absolute;
+        top: 0px;
+    }
+    #tacos {
+    }
+    #sides{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #sides h2{
+        position:relative;
+        margin:auto;
+        display:block;
+        text-align: center;    
     }
 }
 
