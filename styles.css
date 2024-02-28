@@ -122,25 +122,78 @@ dt{
 }
 #details table {
     display:table;
-    table-layout: auto;
-    width: 100%;
-    white-space: nowrap;
+    table-layout: fixed;
+    width: 200px;
+    text-align:left;
+    margin-left:10px;
+    font-family: "montserrat";
 }
-#details table tr{
-    display:table-row;
-}
-#details table td{
-    display:table-cell;
+#details table th:first-child{
+    font-weight:bold;
 }
 #ingredients ul{
     margin: 15px 30px;
 }
 #ingredients li{
     padding-top: 5px;
+    list-style-type: square;
 }
 #directions ol{
     margin: 15px 30px;
 }
 #directions li{
-    padding-top: 5px;
+    padding-top: 20px;
+}
+#sides{
+    background-color:var(--dark-teal)
+}
+#sides img{
+    width: 20%;
+    align-items: left;
+}
+nav{
+    position:absolute;
+    top:0px;
+    width:375px;
+}
+nav h2{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+}
+nav img{
+    width: 50px;
+    position:relative;
+    display:inline-block;
+}
+nav li{
+    list-style-type: none;
+
+}
+#social{
+    margin:auto;
+    display:block;
+}
+.social{
+    display:inline-block;
+    position:relative;
+    text-align: center;
+    margin: auto;
+}
+#copyright h4{
+    text-align:center;
+    position:relative;
+}
+#copyright img{
+    display:block;
+    margin:auto;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width:768px){
+}
+
+
+@media screen and (min-width:1280px){
 }
