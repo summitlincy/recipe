@@ -143,48 +143,58 @@ dt{
     padding-top: 20px;
 }
 #sides{
-    background-color:var(--dark-teal)
+    background-color:var(--dark-teal);
+    display:inline-block;
+    width: 414px;
 }
 #sides img{
     width: 20%;
 }
-#sides p{
-    float:right;
-    text-align: left;
-}
 #sides h3{
-    float:right;
+    display:inline-block;
+    position:absolute;
+    margin-left:100px;
 }
-nav{
-    position:fixed;
-    display:inline-block
-    top:0px;
-    width:375px;
+#sides p{
+    display:inline-block;
+    position:absolute;
+    margin-left:15px;
+    padding-top:30px;
 }
-nav h2{
+#sides svg{
+    display:inline-block;
+    margin-top:20px;
+    padding-left: 10px;
+}
+#nav h2{
     text-indent: 100%;
     white-space: nowrap;
     overflow:hidden;
     font-family:"bebas-neue";
 }
-nav img{
+#nav img{
     width: 50px;
     position:relative;
     display:inline-block;
 }
-nav li{
+#nav li{
     list-style-type: none;
     color:var(--orange);
 }
 #social{
     margin:auto;
-    display:block;
+    display:inline-block;
+    justify-content: space-between;
+    width: 414px;
 }
 .social{
     display:inline-block;
     position:relative;
+    overflow-x:nowrap;
     text-align: center;
     margin: auto;
+    justify-content: space-between;
+    width: 20%;
 }
 #copyright h4{
     text-align:center;
@@ -197,7 +207,7 @@ nav li{
     padding-bottom: 10px;
 }
 
-@media screen and (max:width:414px){
+@media screen and (min-width:414px){
     .nav-items{
         display:none;
     }
@@ -206,12 +216,32 @@ nav li{
     body{
         width:768px;
     }
-    #nav{
-        display:inline-block;
+    .nav-items{
+        display:flex;
         position: absolute;
-        top: 0px;
+        top: 50px;
+        text-align: center;
+        justify-content: space-between;
+        margin:auto;
+    }
+
+    h1{
+        position:relative;
+        display:block;
+        margin:auto;
+        text-align: left;
+    }
+    #menu{
+        position:relative;
+        display:inline-block;
+        margin:auto;
+        margin-top: 70px;
     }
     #tacos {
+        position:relative;
+        display:inline-block;
+        margin:auto;
+        margin-top: 100px;
     }
     #sides{
         display:grid;
