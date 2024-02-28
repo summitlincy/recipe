@@ -187,6 +187,11 @@ nav li{
     padding-bottom: 10px;
 }
 
+@media screen and (max:width:414px){
+    .nav-items{
+        display:none;
+    }
+}
 @media screen and (min-width:768px){
     body{
         width:768px;
